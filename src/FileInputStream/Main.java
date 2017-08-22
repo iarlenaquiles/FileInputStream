@@ -8,8 +8,9 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		InputStream is = new FileInputStream("arquivo.txt");
-		int b = is.read();
-		System.out.println(is);
+		char b = (char) is.read();
+		System.out.println(b);
+		b = (char) is.read();
 		System.out.println(b);
 	}
 
