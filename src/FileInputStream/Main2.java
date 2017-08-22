@@ -12,11 +12,12 @@ public class Main2 {
 		InputStream is = new FileInputStream("arquivo.txt");
 		InputStreamReader isr = new InputStreamReader(is);
 		BufferedReader br = new BufferedReader(isr);
-		String str;
-		while((str = br.readLine()) != null){
+		String str = br.readLine();
+		while (str != null) {
 			System.out.println(str);
+			str = br.readLine();
 		}
-		
+
 		br.close();
 	}
 
