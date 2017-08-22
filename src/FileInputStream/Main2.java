@@ -15,7 +15,7 @@ public class Main2 {
 			System.out.print((char)b);
 		}
 		
-		is.close();
+		isr.close();
 	}
 
 }
