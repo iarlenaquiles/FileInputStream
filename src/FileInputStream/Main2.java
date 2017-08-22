@@ -1,19 +1,17 @@
 package FileInputStream;
 
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.InputStreamReader;
 
-public class Main {
+public class Main2 {
 
 	public static void main(String[] args) throws IOException {
 		InputStream is = new FileInputStream("arquivo.txt");
-		OutputStream os = new FileOutputStream("arquivo2.txt");
+		InputStreamReader isr = new InputStreamReader(is);
 		int b;
-		while((b = is.read()) != -1){
-			os.write(b);
+		while((b = isr.read()) != -1){
 			System.out.print((char)b);
 		}
 		
